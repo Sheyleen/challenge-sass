@@ -1,3 +1,9 @@
+.message, body .messages p {
+  border: 1px solid #6b717f;
+  padding: 16px;
+  color: #fff;
+}
+
 body {
   font: 100% "Space Mono", monospace;
   color: #6b717f;
@@ -6,14 +12,87 @@ body {
   background-color: #fff;
   overflow-x: hidden;
 }
-body header {
-  text-align: center;
-  color: #BF4080;
-}
 body main {
   padding: 0 1em;
 }
-body main article {
+body article {
   display: flex;
   flex-wrap: wrap;
+}
+body article section {
+  flex-grow: 1;
+  flex-basis: 45%;
+  border: 1px #6b717f solid;
+  box-shadow: 10px 10px 15px -4px #6b717f;
+  -webkit-box-shadow: 10px 10px 15px -4px #6b717f;
+  -moz-box-shadow: 10px 10px 15px -4px #6b717f;
+  padding: 16px;
+  margin: 16px;
+  clear: both;
+  overflow: auto;
+  box-sizing: border-box;
+}
+body article section.before {
+  float: left;
+  width: 40%;
+}
+body article section.after {
+  float: right;
+  width: 40%;
+}
+body article section #selling-points {
+  flex-grow: 2;
+  flex-basis: 100%;
+}
+body article code {
+  background: #000;
+  border: 1px solid #6b717f;
+  color: #8C8C8C;
+  page-break-inside: avoid;
+  font-family: monospace;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1em 1.5em;
+  display: block;
+  word-wrap: break-word;
+}
+body article code.before {
+  float: left;
+  width: 40%;
+}
+body article code.after {
+  float: right;
+  width: 40%;
+}
+body h1,
+body h2,
+body h3 {
+  color: #BF4080;
+}
+body h1 {
+  text-align: center;
+}
+body h3 {
+  text-align: center;
+  font-size: 1.5em;
+  padding: 32px;
+  margin-bottom: 0px;
+}
+body .messages {
+  padding: 16px;
+}
+body .messages p.success {
+  background-color: green;
+}
+body .messages p.error {
+  background-color: red;
+}
+body .messages p.error:hover {
+  background-color: green;
+}
+body .messages p.warning {
+  background-color: orange;
 }/*# sourceMappingURL=test.css.map */
