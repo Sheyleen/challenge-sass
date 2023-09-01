@@ -1,1 +1,29 @@
-/*# sourceMappingURL=import.css.map */
+li:nth-child(1n+1) {
+  background-color: #ffae1a;
+  color: #ff1a1a;
+}
+
+li:nth-child(1n+2) {
+  background-color: #ffb733;
+  color: #ff3333;
+}
+
+li:nth-child(1n+3) {
+  background-color: #ffc04d;
+  color: #ff4d4d;
+}
+
+li:nth-child(1n+4) {
+  background-color: #ffc966;
+  color: #ff6666;
+}
+
+li:nth-child(1n+5) {
+  background-color: #ffd280;
+  color: #ff8080;
+}
+
+li:nth-child(1n+6) {
+  background-color: #ffdb99;
+  color: #ff9999;
+}/*# sourceMappingURL=import.css.map */

@@ -10,3 +10,10 @@ $error-background-color: red;
 $warning-background-color: orange;
 $general-padding: 16px;
 $footer-h3-padding: $general-padding * 2;
+
+@for $i from 1 through 6 {
+    li:nth-child(1n + #{$i}) {
+    background-color: lighten($warning-background-color, $i * 5%);
+    color: lighten($error-background-color, $i * 5%);
+    }
+}
